@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <table>
+  <tr>
+    <td colspan="2">
+      <app-header></app-header>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <app-nav></app-nav>
+    </td>
+    <td>
+      <app-content></app-content>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <app-footer></app-footer>
+    </td>
+  </tr>
+</table>
+<p>Co my tu robimy? {{title | uppercase }}<br>
+Liczba pi to {{pi | number:'1.1-2'}}<br>
+Dzisiejsza data to: {{date | date: 'dd-MM-yy'}}<br>
+Mój pies to {{dog.name}} i ma {{dog.age}} lat obiekt<br>
+{{showDog()}} -> funkcja zwracająca string
+</p> -->
+<h3>Witamy w projekcie {{title | uppercase}}</h3>
+<p>Dni tygodnia</p>
+<ul>
+  <li *ngFor="let day of days">
+    {{day}}
+  </li>
+</ul>
+<div *ngFor="let dog of dogs">
+    Mój pies ma na imię {{dog.name}} i {{dog.age}} lat
+</div>
