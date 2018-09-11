@@ -25,13 +25,60 @@ Dzisiejsza data to: {{date | date: 'dd-MM-yy'}}<br>
 Mój pies to {{dog.name}} i ma {{dog.age}} lat obiekt<br>
 {{showDog()}} -> funkcja zwracająca string
 </p> -->
-<h3>Witamy w projekcie {{title | uppercase}}</h3>
+<!-- <h3>Witamy w projekcie {{title | uppercase}}</h3>
 <p>Dni tygodnia</p>
 <ul>
-  <li *ngFor="let day of days">
-    {{day}}
-  </li>
+  <ng-container *ngFor="let day of days; let e = even">
+    <li *ngIf="e">
+      {{day}}
+    </li>
+  </ng-container>
 </ul>
-<div *ngFor="let dog of dogs">
-    Mój pies ma na imię {{dog.name}} i {{dog.age}} lat
-</div>
+
+<div *ngIf="dogs.length > 0; then areDogs; else noDogs"></div>
+<ng-template #areDogs>
+  <div *ngFor="let dog of dogs; let i = index">
+    <p>
+      {{i+1}} Mój pies ma na imię {{dog.name}} i {{dog.age}} lat
+    </p>
+  </div>
+</ng-template>
+
+<ng-template #noDogs>
+  <p>
+    Piesków brak :(
+  </p>
+</ng-template>
+
+<div *ngFor="let day of days">
+  <div [ngSwitch]="day">
+    <div *ngSwitchCase="'Poniedziałek'">
+      Monday
+    </div>
+    <div *ngSwitchCase="'Wtorek'">
+      Tuesday
+    </div>
+    <div *ngSwitchCase="'Środa'">
+      Wednesday
+    </div>
+    <div *ngSwitchCase="'Czwartek'">
+      Thursady
+    </div>
+    <div *ngSwitchCase="'Piątek'">
+      Friday
+    </div>
+    <div *ngSwitchCase="'Sobota'">
+      Saturday
+    </div>
+    <div *ngSwitchDefault>
+      Sunday
+    </div>
+  </div>
+</div> -->
+
+<h3 [className]="colorClass">Property binding</h3>
+<img>
+<input>
+
+<button>Dodaj</button>
+

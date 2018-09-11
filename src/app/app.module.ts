@@ -15,7 +15,7 @@ import { ItemComponent } from './item/item.component';
     FooterComponent,
     NavComponent,
     ContentComponent,
-    ItemComponent
+    ItemComponent,
   ],
   imports: [
     BrowserModule
