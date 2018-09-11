@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "testAngular";
+  // title = "testAngular";
   // title = "Ćwiczymy interpolację stringow";
   // dog = new Dog("Burek", 6);
   // showDog() {
@@ -14,27 +14,58 @@ export class AppComponent {
   // }
   // pi = Math.PI;
   // date = new Date();
-  days = [
-    "Poniedziałek",
-    "Wtorek",
-    "Środa",
-    "Czwartek",
-    "Piątek",
-    "Sobota",
-    "Niedziela"
-  ];
-  dogs = new Array<Dog>();
-  constructor() {
-    this.dogs.push(
-      new Dog("Reksio", 4),
-      new Dog("Burek", 3),
-      new Dog("Maksiu", 9),
-      new Dog("Łapek", 6),
-      new Dog("Pluto", 1)
-    );
-  }
-  colorClass = "color";
+  // days = [
+  //   "Poniedziałek",
+  //   "Wtorek",
+  //   "Środa",
+  //   "Czwartek",
+  //   "Piątek",
+  //   "Sobota",
+  //   "Niedziela"
+  // ];
+  // dogs = new Array<Dog>();
+  // constructor() {
+  //   this.dogs.push(
+  //     new Dog("Reksio", 4),
+  //     new Dog("Burek", 3),
+  //     new Dog("Maksiu", 9),
+  //     new Dog("Łapek", 6),
+  //     new Dog("Pluto", 1)
+  //   );
+  // }
+  // colorClass = "color";
+  // logoUrl = "";
+  // maxLength = 5;
+  // inputText = "Tekst";
+  // isDisable = "true";
+
+  // onFocus() {
+  //   this.colorClass = "color2"
+  // }
+  // onClick(event){
+  //   console.log(event);
+  // }
+  // onMouseMove(event) {
+  //   console.log("x: " + event.clientX);
+  // })
+  // onPaste() {
+  //   this.inputText = "Nie wklejaj, wpisz leniu!";
+  // }
+  // change() {
+  //   this.isDisable = false;
+  // }
+
+  // profession = "programista";
+  // skill = "angular";
+
+  // saveP(event) {
+  //   this.profession = event.target.value;
+  // }
+  // saveS(event) {
+  //   this.skill = event.target.value;
+  // }
+
 }
-class Dog {
-  constructor(public name: string, public age: number) {}
-}
+// class Dog {
+//   constructor(public name: string, public age: number) {}
+// }

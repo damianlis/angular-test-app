@@ -76,9 +76,38 @@ Mój pies to {{dog.name}} i ma {{dog.age}} lat obiekt<br>
   </div>
 </div> -->
 
-<h3 [className]="colorClass">Property binding</h3>
-<img>
-<input>
+<!-- <h3 [className]="colorClass">Property binding</h3>
+<img [src]="logoUrl">
+<input [maxLength]="maxLength" [value]="inputText">
 
-<button>Dodaj</button>
+<button [disabled]="isDisable">Dodaj</button> -->
 
+<!-- <h3 [className]="colorClass">Property binding</h3>
+<input [disabled]="isDisable" (focus)="onFocus()">
+<br>
+<input [disabled]="isDisable" (click)="onClick($event)">
+<br>
+<input [disabled]="isDisable" (mousemove)="onMouseMove($event)">
+<br>
+<input [disabled]="isDisable" (paste)="onPaste()">{{inputText}}
+<br>
+<button (click)="change()">Zmiana</button>
+
+<p>Ten pracownik to {{profession}} a jego umiejętność to {{skill}}</p>
+
+<label>Zawód</label>
+<input [value]="profession" (input)="saveP($event)" two-way binding na piechote
+<input [(ngModel)]="profession"> prawdziwe two-way binding
+<br>
+<label>Umiejętność</label>
+<input [(ngModel)]="skill"> -->
+
+<div>
+  <div class="container">
+    <div>Miejsce na dodawanie tasków</div>
+  </div>
+  <div class="container">
+    <div>Lista zadań</div>
+    <div>Zadania wykonane</div>
+  </div>
+</div>
