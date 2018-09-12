@@ -80,6 +80,9 @@ export class AppComponent {
     this.remove(task);
   }
   tasks = ["Kawka", "Papieros", "Toaleta"];
+  selected(task: string) {
+    console.log(task);
+  }
 }
 // class Dog {
 //   constructor(public name: string, public age: number) {}

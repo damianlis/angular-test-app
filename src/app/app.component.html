@@ -135,4 +135,4 @@ Mój pies to {{dog.name}} i ma {{dog.age}} lat obiekt<br>
   </div>
 </div>
 
-<app-footer [tasks]="tasks"></app-footer>
+<app-footer [tasks]="tasks" (eventTask)="selected($event)"></app-footer>

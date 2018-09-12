@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -9,6 +9,13 @@ export class FooterComponent implements OnInit {
 
   @Input()
   tasks;
+
+  @Output()
+  eventTask = new EventEmitter<string>();
+
+  select(task) {
+    this.eventTask.emit(task);
+  }
 
   constructor() { }
 
