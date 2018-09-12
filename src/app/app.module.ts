@@ -3,20 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavComponent } from './nav/nav.component';
-import { ContentComponent } from './content/content.component';
-import { ItemComponent } from './item/item.component';
+import { AddTaskComponent } from './add-task/add-task.component';
+import { TodoTaskComponent } from './todo-task/todo-task.component';
+import { DoneTaskComponent } from './done-task/done-task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavComponent,
-    ContentComponent,
-    ItemComponent,
+    AddTaskComponent,
+    TodoTaskComponent,
+    DoneTaskComponent,
   ],
   imports: [
     BrowserModule,

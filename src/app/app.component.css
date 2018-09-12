@@ -1,16 +1,3 @@
-table {
-  width: 100%;
-}
-td {
-  border: 1px solid black;
-  text-align: center;
-}
-.color {
-  color: red;
-}
-.color2 {
-  color: blue;
-}
 .container {
   display: flex;
   justify-content: space-around;
