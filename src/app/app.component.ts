@@ -79,6 +79,7 @@ export class AppComponent {
     this.tasksDone.push(task);
     this.remove(task);
   }
+  tasks = ["Kawka", "Papieros", "Toaleta"];
 }
 // class Dog {
 //   constructor(public name: string, public age: number) {}
