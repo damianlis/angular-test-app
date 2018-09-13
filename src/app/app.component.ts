@@ -1,11 +1,11 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   // title = "testAngular";
   // title = "Ćwiczymy interpolację stringow";
   // dog = new Dog("Burek", 6);
@@ -77,9 +77,11 @@ export class AppComponent {
     this.tasksDone.push(task);
     this.remove(task);
   }
-  tasks = ["Kawka", "Papieros", "Toaleta"];
   selected(task: string) {
     console.log(task);
+  }
+  ngOnInit(): void {
+    this.tasksList = ["Zrobienie kawy", "Wytarcie kurzy", "Zakupy"];
   }
 }
 // class Dog {
