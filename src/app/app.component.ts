@@ -1,11 +1,13 @@
 import { Component, OnInit } from "@angular/core";
+import { TasksService } from "./services/tasks.service";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
+  providers: [TasksService]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   // title = "testAngular";
   // title = "Ćwiczymy interpolację stringow";
   // dog = new Dog("Burek", 6);
@@ -65,24 +67,6 @@ export class AppComponent implements OnInit {
   //   this.skill = event.target.value;
   // }
   newTask: string;
-  tasksList: Array<string> = [];
-  tasksDone: Array<string> = [];
-  add(task: string) {
-    this.tasksList.push(task);
-  }
-  remove(task: string) {
-    this.tasksList = this.tasksList.filter(e => e !== task);
-  }
-  done(task: string) {
-    this.tasksDone.push(task);
-    this.remove(task);
-  }
-  selected(task: string) {
-    console.log(task);
-  }
-  ngOnInit(): void {
-    this.tasksList = ["Zrobienie kawy", "Wytarcie kurzy", "Zakupy"];
-  }
 }
 // class Dog {
 //   constructor(public name: string, public age: number) {}
